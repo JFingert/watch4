@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27503EEE1B4DE62300F9615D /* MagicalRecord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27503EDF1B4DE61B00F9615D /* MagicalRecord.framework */; };
 		275B718E1B4D88620038E985 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B718D1B4D88620038E985 /* main.m */; };
 		275B71911B4D88620038E985 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B71901B4D88620038E985 /* AppDelegate.m */; };
 		275B71941B4D88620038E985 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B71931B4D88620038E985 /* ViewController.m */; };
@@ -25,9 +26,68 @@
 		275B71D71B4D88630038E985 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B71D61B4D88630038E985 /* GlanceController.m */; };
 		275B71DA1B4D88630038E985 /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B71D91B4D88630038E985 /* ComplicationController.m */; };
 		275B71DC1B4D88630038E985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275B71DB1B4D88630038E985 /* Assets.xcassets */; };
+		275B722E1B4D96A50038E985 /* weatherData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 275B722C1B4D96A50038E985 /* weatherData.xcdatamodeld */; };
+		275B72321B4D96F90038E985 /* WeatherConditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B72311B4D96F90038E985 /* WeatherConditions.m */; };
+		275B72341B4D97450038E985 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275B72331B4D97450038E985 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		27503EDE1B4DE61B00F9615D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27503ED21B4DE61A00F9615D /* MagicalRecord.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 905D07181A63DE190076B54E;
+			remoteInfo = "MagicalRecord for iOS";
+		};
+		27503EE01B4DE61B00F9615D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27503ED21B4DE61A00F9615D /* MagicalRecord.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9004F5211A94CBCF00A61312;
+			remoteInfo = "MagicalRecord for iOS Tests";
+		};
+		27503EE21B4DE61B00F9615D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27503ED21B4DE61A00F9615D /* MagicalRecord.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 905D073B1A63DE690076B54E;
+			remoteInfo = "MagicalRecord for OS X";
+		};
+		27503EE41B4DE61B00F9615D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27503ED21B4DE61A00F9615D /* MagicalRecord.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9004F5661A94CBF900A61312;
+			remoteInfo = "MagicalRecord for OS X Tests";
+		};
+		27503EE61B4DE61B00F9615D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27503ED21B4DE61A00F9615D /* MagicalRecord.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C7CF97AB17498414008D9D13;
+			remoteInfo = "libMagicalRecord for iOS";
+		};
+		27503EE81B4DE61B00F9615D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27503ED21B4DE61A00F9615D /* MagicalRecord.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C7CF97FF174984CA008D9D13;
+			remoteInfo = "libMagicalRecord for iOS Tests";
+		};
+		27503EEA1B4DE61B00F9615D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27503ED21B4DE61A00F9615D /* MagicalRecord.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C7CF97BB1749843F008D9D13;
+			remoteInfo = "libMagicalRecord for OS X";
+		};
+		27503EEC1B4DE61B00F9615D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27503ED21B4DE61A00F9615D /* MagicalRecord.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C7CF9816174984E4008D9D13;
+			remoteInfo = "libMagicalRecord for OS X Tests";
+		};
 		275B71A31B4D88620038E985 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 275B71811B4D88620038E985 /* Project object */;
@@ -84,6 +144,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		27503ED21B4DE61A00F9615D /* MagicalRecord.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MagicalRecord.xcodeproj; path = Vendor/MagicalRecord/MagicalRecord.xcodeproj; sourceTree = "<group>"; };
 		275B71891B4D88620038E985 /* watch4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watch4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		275B718D1B4D88620038E985 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		275B718F1B4D88620038E985 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,6 +179,11 @@
 		275B71D91B4D88630038E985 /* ComplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
 		275B71DB1B4D88630038E985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		275B71DD1B4D88630038E985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		275B722D1B4D96A50038E985 /* weatherData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = weatherData.xcdatamodel; sourceTree = "<group>"; };
+		275B722F1B4D96F90038E985 /* WeatherConditions+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WeatherConditions+CoreDataProperties.h"; sourceTree = "<group>"; };
+		275B72301B4D96F90038E985 /* WeatherConditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherConditions.h; sourceTree = "<group>"; };
+		275B72311B4D96F90038E985 /* WeatherConditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherConditions.m; sourceTree = "<group>"; };
+		275B72331B4D97450038E985 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +191,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27503EEE1B4DE62300F9615D /* MagicalRecord.framework in Frameworks */,
+				275B72341B4D97450038E985 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,9 +220,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27503ED31B4DE61A00F9615D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27503EDF1B4DE61B00F9615D /* MagicalRecord.framework */,
+				27503EE11B4DE61B00F9615D /* MagicalRecord for iOS Tests.xctest */,
+				27503EE31B4DE61B00F9615D /* MagicalRecord.framework */,
+				27503EE51B4DE61B00F9615D /* MagicalRecord for OS X Tests.xctest */,
+				27503EE71B4DE61B00F9615D /* libMagicalRecord.a */,
+				27503EE91B4DE61B00F9615D /* libMagicalRecord for iOS Tests.xctest */,
+				27503EEB1B4DE61B00F9615D /* libMagicalRecord.dylib */,
+				27503EED1B4DE61B00F9615D /* libMagicalRecord for OS X Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		275B71801B4D88620038E985 = {
 			isa = PBXGroup;
 			children = (
+				27503ED21B4DE61A00F9615D /* MagicalRecord.xcodeproj */,
+				275B72331B4D97450038E985 /* CoreData.framework */,
 				275B718B1B4D88620038E985 /* watch4 */,
 				275B71A51B4D88620038E985 /* watch4Tests */,
 				275B71B01B4D88620038E985 /* watch4UITests */,
@@ -181,6 +266,10 @@
 			children = (
 				275B718F1B4D88620038E985 /* AppDelegate.h */,
 				275B71901B4D88620038E985 /* AppDelegate.m */,
+				275B722F1B4D96F90038E985 /* WeatherConditions+CoreDataProperties.h */,
+				275B72301B4D96F90038E985 /* WeatherConditions.h */,
+				275B72311B4D96F90038E985 /* WeatherConditions.m */,
+				275B722C1B4D96A50038E985 /* weatherData.xcdatamodeld */,
 				275B71921B4D88620038E985 /* ViewController.h */,
 				275B71931B4D88620038E985 /* ViewController.m */,
 				275B71951B4D88620038E985 /* Main.storyboard */,
@@ -387,6 +476,12 @@
 			mainGroup = 275B71801B4D88620038E985;
 			productRefGroup = 275B718A1B4D88620038E985 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 27503ED31B4DE61A00F9615D /* Products */;
+					ProjectRef = 27503ED21B4DE61A00F9615D /* MagicalRecord.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				275B71881B4D88620038E985 /* watch4 */,
@@ -397,6 +492,65 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		27503EDF1B4DE61B00F9615D /* MagicalRecord.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MagicalRecord.framework;
+			remoteRef = 27503EDE1B4DE61B00F9615D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27503EE11B4DE61B00F9615D /* MagicalRecord for iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "MagicalRecord for iOS Tests.xctest";
+			remoteRef = 27503EE01B4DE61B00F9615D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27503EE31B4DE61B00F9615D /* MagicalRecord.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MagicalRecord.framework;
+			remoteRef = 27503EE21B4DE61B00F9615D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27503EE51B4DE61B00F9615D /* MagicalRecord for OS X Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "MagicalRecord for OS X Tests.xctest";
+			remoteRef = 27503EE41B4DE61B00F9615D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27503EE71B4DE61B00F9615D /* libMagicalRecord.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMagicalRecord.a;
+			remoteRef = 27503EE61B4DE61B00F9615D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27503EE91B4DE61B00F9615D /* libMagicalRecord for iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "libMagicalRecord for iOS Tests.xctest";
+			remoteRef = 27503EE81B4DE61B00F9615D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27503EEB1B4DE61B00F9615D /* libMagicalRecord.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libMagicalRecord.dylib;
+			remoteRef = 27503EEA1B4DE61B00F9615D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27503EED1B4DE61B00F9615D /* libMagicalRecord for OS X Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "libMagicalRecord for OS X Tests.xctest";
+			remoteRef = 27503EEC1B4DE61B00F9615D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		275B71871B4D88620038E985 /* Resources */ = {
@@ -449,6 +603,8 @@
 			files = (
 				275B71941B4D88620038E985 /* ViewController.m in Sources */,
 				275B71911B4D88620038E985 /* AppDelegate.m in Sources */,
+				275B722E1B4D96A50038E985 /* weatherData.xcdatamodeld in Sources */,
+				275B72321B4D96F90038E985 /* WeatherConditions.m in Sources */,
 				275B718E1B4D88620038E985 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -767,6 +923,7 @@
 				275B71E21B4D88630038E985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		275B71E41B4D88630038E985 /* Build configuration list for PBXNativeTarget "watch4 WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -775,6 +932,7 @@
 				275B71E61B4D88630038E985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		275B71E81B4D88630038E985 /* Build configuration list for PBXNativeTarget "watch4" */ = {
 			isa = XCConfigurationList;
@@ -783,6 +941,7 @@
 				275B71EA1B4D88630038E985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		275B71EB1B4D88630038E985 /* Build configuration list for PBXNativeTarget "watch4Tests" */ = {
 			isa = XCConfigurationList;
@@ -791,6 +950,7 @@
 				275B71ED1B4D88630038E985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		275B71EE1B4D88630038E985 /* Build configuration list for PBXNativeTarget "watch4UITests" */ = {
 			isa = XCConfigurationList;
@@ -799,8 +959,22 @@
 				275B71F01B4D88630038E985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		275B722C1B4D96A50038E985 /* weatherData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				275B722D1B4D96A50038E985 /* weatherData.xcdatamodel */,
+			);
+			currentVersion = 275B722D1B4D96A50038E985 /* weatherData.xcdatamodel */;
+			path = weatherData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 275B71811B4D88620038E985 /* Project object */;
 }

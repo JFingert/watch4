@@ -7,13 +7,14 @@
 //
 
 #import "AppDelegate.h"
+//#import "ViewController.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
+//@synthesize ViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -28,6 +29,15 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+//    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+//    UIViewController *ViewController = window.rootViewController;
+//    [ViewController updateContext];
+//    ViewController *vc = [[((UITabBarController *)self.window.rootViewController) viewControllers] objectAtIndex:0];
+//    ViewController *vc = (ViewController *)  self.window.rootViewController;
+//    ViewController *vc = [[[UIApplication sharedApplication] keyWindow] rootViewController];
+//    [vc updateContext];
+    // grab our own navigation controller
+
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {

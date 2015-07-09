@@ -7,6 +7,7 @@
 //
 
 #import "ExtensionDelegate.h"
+#import "InterfaceController.h"
 
 @implementation ExtensionDelegate
 
