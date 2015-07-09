@@ -28,6 +28,7 @@ NSOutputStream *outputStream;
 @synthesize one;
 @synthesize two;
 @synthesize three;
+@synthesize source;
 @synthesize motionManagaer;
 @synthesize xVal, yVal, zVal;
 @synthesize motionQue;
@@ -56,6 +57,7 @@ NSMutableArray * messages;
         session.delegate = self;
         [session activateSession];
     }
+    [self callForWeatherUpdate];
     //    if (motionManagaer.accelerometerAvailable == false) {
     //        NSLog(@"motion not supported");
     //    }
@@ -72,8 +74,6 @@ NSMutableArray * messages;
     //        [motionManagaer startAccelerometerUpdatesToQueue:accelerometerQueue withHandler:[handler copy]];
     //
     //    };
-    
-    NSLog(@"willActivate");
     
     
     [motionManagaer setAccelerometerUpdateInterval:0.1];
@@ -101,7 +101,7 @@ NSMutableArray * messages;
 
 - (void)session:(nonnull WCSession *)session didReceiveMessage:(nonnull NSDictionary<NSString *,id> *)message replyHandler:(nonnull void (^)(NSDictionary<NSString *,id> * __nonnull))replyHandler {
     NSLog(@"message: %@", message);
-    
+    source.text = @"sendMessage";
     one.text = [message objectForKey:@"one"];
     two.text = [message objectForKey:@"two"];
     three.text = [message objectForKey:@"three"];
@@ -139,10 +139,7 @@ NSMutableArray * messages;
     [[WCSession defaultSession] sendMessage:refreshData
                                replyHandler:^(NSDictionary *reply) {
                                    //handle reply from iPhone app here
-                                   NSLog(@"reply! %@", reply);
-                                                                      one.text = [reply objectForKey:@"one"];
-                                                                      two.text = [reply objectForKey:@"two"];
-                                                                      three.text = [reply objectForKey:@"three"];
+                                   //doesn't listen her, check above
                                }
                                errorHandler:^(NSError *error) {
                                    NSLog(@"ERROR! %@", error);
@@ -153,6 +150,7 @@ NSMutableArray * messages;
 - (void)session:(nonnull WCSession *)session didReceiveApplicationContext:(nonnull NSDictionary<NSString *,id> *)applicationContext {
     
     NSLog(@"applicationContext! %@", applicationContext);
+    source.text = @"updateApplicationContext";
     one.text = [applicationContext objectForKey:@"one"];
     two.text = [applicationContext objectForKey:@"two"];
     three.text = [applicationContext objectForKey:@"three"];

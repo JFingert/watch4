@@ -45,13 +45,15 @@
    [MagicalRecord setupCoreDataStackWithStoreNamed:@"WeatherConditions"];
     
     self.counter = 0;
-    [self getWeather];
+//    [self getWeather];
     
-    NSTimer* timer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector: @selector(updateContext:) userInfo: nil repeats: YES];
+    NSTimer* timer = [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector: @selector(getWeatherByTimer:) userInfo: nil repeats: YES];
 }
 
 
-
+-(void) getWeatherByTimer:(NSTimer *)timer {
+    [self getWeather];
+}
 NSString *latlong = @"45.532814,-122.689296";
 NSString *city = @"";
 
@@ -110,7 +112,10 @@ NSString *city = @"";
                                                            } completion:^(BOOL success, NSError *error) {
                                                                // This block runs in main thread
                                                            }];
-                                              
+                                              if([self.session isReachable]) {
+                                                  [self updateContext];
+                                              }
+                                          
 //                                                           NSLog(@"%@", [WeatherConditions MR_findAll]);
                                       }
                                   }];
@@ -200,13 +205,11 @@ NSString *city = @"";
 //    [self.session updateApplicationContext:applicationData error:nil];
 }
 
--(void)updateContext:(NSTimer *)timer {
-    NSLog(@"reachable! %@", self.reachable);
-    if(self.reachable) {
-        NSLog(@"updateContext!");
-        NSDictionary *applicationData = [self makeWeatherStrings];
-        [self.session updateApplicationContext:applicationData error:nil];
-    }
+-(void)updateContext {
+    NSLog([self.session isReachable] ? @"Yes" : @"No");
+    NSLog(@"updateContext!");
+    NSDictionary *applicationData = [self makeWeatherStrings];
+    [self.session updateApplicationContext:applicationData error:nil];
 }
 
 

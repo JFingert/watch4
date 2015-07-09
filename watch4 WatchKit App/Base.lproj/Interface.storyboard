@@ -10,6 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
+                        <label alignment="left" text="source" id="hv9-MT-mx7"/>
                         <label alignment="left" text="1" id="2fn-Yc-gcs"/>
                         <label alignment="left" text="2" id="UDc-Wn-U9N"/>
                         <label alignment="left" text="3" id="752-pt-SC9"/>
@@ -21,6 +22,7 @@
                     </items>
                     <connections>
                         <outlet property="one" destination="2fn-Yc-gcs" id="hQO-na-LkX"/>
+                        <outlet property="source" destination="hv9-MT-mx7" id="N0U-Qx-6Wn"/>
                         <outlet property="three" destination="752-pt-SC9" id="Sje-WQ-Jee"/>
                         <outlet property="two" destination="UDc-Wn-U9N" id="wZB-Nj-1dY"/>
                     </connections>

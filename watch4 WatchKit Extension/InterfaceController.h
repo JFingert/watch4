@@ -15,6 +15,7 @@
 @property (strong, nonatomic) IBOutlet WKInterfaceLabel *one;
 @property (strong, nonatomic) IBOutlet WKInterfaceLabel *two;
 @property (strong, nonatomic) IBOutlet WKInterfaceLabel *three;
+@property (strong, nonatomic) IBOutlet WKInterfaceLabel *source;
 
 @property (strong, nonatomic) IBOutlet WKInterfaceButton *getWeather;
 
