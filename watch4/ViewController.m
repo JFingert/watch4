@@ -20,6 +20,7 @@
 @property (strong, nonatomic) NSMutableArray *counterData;
 @property (nonatomic, assign) int counter;
 @property (strong, nonatomic) WCSession *session;
+@property (strong, nonatomic) WCSessionFileTransfer *ftSession;
 @property(nonatomic, readonly, getter=isReachable) BOOL reachable;
 
 @end
@@ -125,12 +126,13 @@ NSString *city = @"";
 
 
 
-
+// listen for refresh calls from watch
 - (void)session:(nonnull WCSession *)session didReceiveMessage:(nonnull NSDictionary<NSString *,id> *)message replyHandler:(nonnull void (^)(NSDictionary<NSString *,id> * __nonnull))replyHandler {
     NSLog(@"message!!!: %@", message);
     
     if([[message objectForKey:@"refresh"]  isEqual: @"refresh"]) {
         [self latestWeather];
+        [self triggerFile:@"1"];
     }
     
     
@@ -147,9 +149,12 @@ NSString *city = @"";
 
 - (IBAction)triggerFile:(id)sender {
     NSURL *fileUrl = [[NSBundle mainBundle] URLForResource:@"cx" withExtension:@"jpg"];
-    NSLog(@"triggerFile: ", fileUrl);
+    NSLog(@"triggerFile: %@", fileUrl);
     //    [[WCSessionFileTransfer defaultFileSession] transferFile:fileUrl metadata:<#(nullable NSDictionary<NSString *,id> *)#>metadata]
-    [[WCSession defaultSession] transferFile:fileUrl metadata:nil];
+    
+    [self.session transferFile:fileUrl metadata:nil];
+//    [self.session transferFile:fileUrl trans:fileUrl metadata:nil];
+
 }
 
 

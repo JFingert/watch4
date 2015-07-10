@@ -25,6 +25,7 @@
 @property (strong, nonatomic) IBOutlet WKInterfaceLabel *xVal;
 @property (strong, nonatomic) IBOutlet WKInterfaceLabel *yVal;
 @property (strong, nonatomic) IBOutlet WKInterfaceLabel *zVal;
+@property (strong, nonatomic) IBOutlet WKInterfaceGroup *bgGroup;
 
 //socket stuff
 

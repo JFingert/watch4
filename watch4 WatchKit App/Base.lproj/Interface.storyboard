@@ -10,6 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
+                        <group width="136" height="11" alignment="left" id="0FQ-vh-vDj"/>
                         <label alignment="left" text="source" id="hv9-MT-mx7"/>
                         <label alignment="left" text="1" id="2fn-Yc-gcs"/>
                         <label alignment="left" text="2" id="UDc-Wn-U9N"/>
@@ -21,6 +22,7 @@
                         </button>
                     </items>
                     <connections>
+                        <outlet property="bgGroup" destination="0FQ-vh-vDj" id="ZCx-AG-4M8"/>
                         <outlet property="one" destination="2fn-Yc-gcs" id="hQO-na-LkX"/>
                         <outlet property="source" destination="hv9-MT-mx7" id="N0U-Qx-6Wn"/>
                         <outlet property="three" destination="752-pt-SC9" id="Sje-WQ-Jee"/>
@@ -28,7 +30,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="347"/>
+            <point key="canvasLocation" x="235" y="333"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2F9B9828E3D3D294114218D276F3DDD0C13D2D10",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "958932E9D08E4465709D54DB1E7CECF23B0F442E" : 0,
+    "2F9B9828E3D3D294114218D276F3DDD0C13D2D10" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4B73FA0F-44DA-48DD-BC82-87ADA097A1FF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "958932E9D08E4465709D54DB1E7CECF23B0F442E" : "watch4\/Vendor\/MagicalRecord\/",
+    "2F9B9828E3D3D294114218D276F3DDD0C13D2D10" : "watch4\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "watch4",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "watch4.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:JFingert\/watch4.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2F9B9828E3D3D294114218D276F3DDD0C13D2D10"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/magicalpanda\/MagicalRecord.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "958932E9D08E4465709D54DB1E7CECF23B0F442E"
+    }
+  ]
+}

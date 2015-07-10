@@ -29,6 +29,7 @@
 		275B722E1B4D96A50038E985 /* weatherData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 275B722C1B4D96A50038E985 /* weatherData.xcdatamodeld */; };
 		275B72321B4D96F90038E985 /* WeatherConditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 275B72311B4D96F90038E985 /* WeatherConditions.m */; };
 		275B72341B4D97450038E985 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 275B72331B4D97450038E985 /* CoreData.framework */; };
+		27F6043C1B50480000146DF8 /* cx.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 27F6043B1B50480000146DF8 /* cx.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,6 +185,7 @@
 		275B72301B4D96F90038E985 /* WeatherConditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherConditions.h; sourceTree = "<group>"; };
 		275B72311B4D96F90038E985 /* WeatherConditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherConditions.m; sourceTree = "<group>"; };
 		275B72331B4D97450038E985 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		27F6043B1B50480000146DF8 /* cx.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cx.jpg; path = ../../../Pictures/cx.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +274,7 @@
 				275B722C1B4D96A50038E985 /* weatherData.xcdatamodeld */,
 				275B71921B4D88620038E985 /* ViewController.h */,
 				275B71931B4D88620038E985 /* ViewController.m */,
+				27F6043B1B50480000146DF8 /* cx.jpg */,
 				275B71951B4D88620038E985 /* Main.storyboard */,
 				275B71981B4D88620038E985 /* Assets.xcassets */,
 				275B719A1B4D88620038E985 /* LaunchScreen.storyboard */,
@@ -557,6 +560,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27F6043C1B50480000146DF8 /* cx.jpg in Resources */,
 				275B719C1B4D88620038E985 /* LaunchScreen.storyboard in Resources */,
 				275B71991B4D88620038E985 /* Assets.xcassets in Resources */,
 				275B71971B4D88620038E985 /* Main.storyboard in Resources */,
