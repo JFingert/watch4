@@ -154,6 +154,29 @@ NSString *city = @"";
     
     [self.session transferFile:fileUrl metadata:nil];
 //    [self.session transferFile:fileUrl trans:fileUrl metadata:nil];
+    
+//    if ([WCSession isSupported] && [WCSession defaultSession].isWatchAppInstalled && success) {
+        NSFileCoordinator *fileCoordinator = [[NSFileCoordinator alloc] init];
+        NSFileAccessIntent *readingIntent = [NSFileAccessIntent readingIntentWithURL:fileUrl options:0];
+        [fileCoordinator coordinateAccessWithIntents:@[readingIntent] queue:[[NSOperationQueue alloc] init] byAccessor:^(NSError *accessError) {
+            if (accessError) {
+                return;
+            }
+            
+//            WCSession *session = [WCSession defaultSession];
+            
+            for (WCSessionFileTransfer *transfer in self.session.outstandingFileTransfers) {
+                if ([transfer.file.fileURL isEqual:readingIntent.URL]) {
+//                    NSLog(@"cancel!");
+//                    [transfer cancel];
+//                    break;
+                }
+            }
+            
+            [self.session transferFile:readingIntent.URL metadata:nil];
+            NSLog(@"sending transfer");
+        }];
+//    }
 
 }
 
